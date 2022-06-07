@@ -1,8 +1,7 @@
-package com.springBoot.springSecurityImplementation.TaskJwtToken;
+package com.springBoot.springSecurityImplementation.TaskJwtTokenImple;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
@@ -14,6 +13,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+
 @Component
 public class JwtFilter extends OncePerRequestFilter {
 
@@ -22,6 +22,7 @@ public class JwtFilter extends OncePerRequestFilter {
 
     @Autowired
     private MyUserDetailsService myUserDetailsService;
+
 
     @Override
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
@@ -46,6 +47,8 @@ public class JwtFilter extends OncePerRequestFilter {
             }
         }
 
+
         filterChain.doFilter(request, response); // now add this filter in your webSecurty configuration
     }
+
 }

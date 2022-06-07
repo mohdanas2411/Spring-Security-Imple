@@ -1,8 +1,7 @@
-package com.springBoot.springSecurityImplementation.TaskJwtToken;
+package com.springBoot.springSecurityImplementation.TaskJwtTokenImple;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Table;
 
 @Entity
 public class User_One {

@@ -1,6 +1,7 @@
-package com.springBoot.springSecurityImplementation.TaskJwtToken;
+package com.springBoot.springSecurityImplementation.TaskJwtTokenImple;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.web.bind.annotation.*;
@@ -23,7 +24,9 @@ public class TaskController {
         return "Welcome Spring Security";
     }
 
+
     @GetMapping("/api/task/get")
+    @Cacheable(value = "token")
     public User_One getBook() {
 
         return user_oneRepo.findByUserName("mohd");

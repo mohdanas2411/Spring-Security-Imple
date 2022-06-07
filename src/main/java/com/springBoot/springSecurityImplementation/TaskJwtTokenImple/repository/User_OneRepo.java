@@ -1,4 +1,4 @@
-package com.springBoot.springSecurityImplementation.TaskJwtToken;
+package com.springBoot.springSecurityImplementation.TaskJwtTokenImple;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
