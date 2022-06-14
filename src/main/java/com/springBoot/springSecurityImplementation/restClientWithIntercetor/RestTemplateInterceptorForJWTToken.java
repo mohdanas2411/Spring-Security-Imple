@@ -1,0 +1,2 @@
+package com.springBoot.springSecurityImplementation.restClientWithIntercetor;public class RestTemplateInterceptorForJWTToken {
+}
