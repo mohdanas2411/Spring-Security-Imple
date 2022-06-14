@@ -1,5 +1,7 @@
-package com.springBoot.springSecurityImplementation.TaskJwtTokenImple;
+package com.springBoot.springSecurityImplementation.TaskJwtTokenImple.filter;
 
+import com.springBoot.springSecurityImplementation.TaskJwtTokenImple.services.MyUserDetailsService;
+import com.springBoot.springSecurityImplementation.TaskJwtTokenImple.utills.JwtUtill;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;

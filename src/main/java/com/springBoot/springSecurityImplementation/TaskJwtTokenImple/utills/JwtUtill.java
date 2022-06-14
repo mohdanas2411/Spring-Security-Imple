@@ -1,4 +1,4 @@
-package com.springBoot.springSecurityImplementation.TaskJwtTokenImple;
+package com.springBoot.springSecurityImplementation.TaskJwtTokenImple.utills;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
